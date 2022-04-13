@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jody Sorofman • Product Strategy & Design</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <nav>
+        <img src="/images/logo.png">
+        <div class="nav-labels">
+            <a href="">About</a>
+            <a class="selected" href="index.html">Work</a>
+            <a href="">Contact</a>
+        </div>
+    
+        <section>
+            <img class="nav-mobile" src="images/hamburger.svg" alt="hamburger-icon" id="menu-open" />
+    
+    
+            <aside class="side-menu-position side-menu-design" id="side-menu">
+                <header class="side-menu-header">
+                    <img class="mobile-logo" src="images/logo.png">
+                    <img class="close-icon" src="images/x.svg" id="menu-close">
+                </header>
+    
+                <div class="side-menu-nav">
+                    <a href="">About</a>
+                    <a href="index.html">Work</a>
+                    <a href="">Contact</a>
+                </div>
+            </aside>
+    
+        </section>
+    
+    </nav>
+
+<div class="challenge">
+<h1>Healthcare Learning Management System (LMS): <br>New Information Architecture</h1>
+
+<h2>Background</h2>
+
+<p>This healthcare learning management system (LMS) is marketed as a strategic solution to vastly improve patient outcomes in healthcare facilities. By delivering
+sophisticated online assessments and training, healthcare companies can identify employee skills gaps and provide required remediation.</p>
+
+
+
+
+<h2>The Design Challenge</h2>   
+<p>The global navigation in the product looked like this:</p>
+<img src="/images/existing_sitenav.png">
+
+
+<ul>
+<li>Nothing about the information architecture communicated strategic value.</li> 
+<li>Links in the highest level of the left-hand navigation covered a broad range of content types, some which were content
+objects and others were functionality. The purpose of those objects and their relationships to other links were unclear.</li>
+
+<li>According to user surveys, the navigation was cluttered, confusing and didn't link to functionality that should be easily accessible. It took a lot of time to onboard new users
+since none of it was intuitive.</li>
+
+</ul>
+
+<aside class="highlight">
+<p>The navigation was a huge missed revenue opportunity. It failed to provide a content structure that
+supported product and packaging strategies by highlighting new product offerings and showing end-to-end
+solutions. Drawing the connection between information architecture and business goals was important when
+advocating this initiative as a priority to product leadership.</p>
+</aside>
+
+<hr>
+
+</div>
+
+
+<div class="goals">
+
+<h2>Goals</h2>
+
+<p>I defined the information architecture goals from both user and business perspectives:</p>
+
+<section class="objectives">
+
+
+<div class="objectives-list">
+
+<ul>
+
+<li>Create a user experience for LMS clients that integrates seamlessly into their daily workflow.</li>
+
+<li>Provide direct and intuitive paths for users to efficiently complete the tasks they set out to do.</li>
+
+<li>Speak to users in their language.</li>
+
+<li>Organize information and design functionality according to their view of the world.</li>
+
+<li>Develop a flexible, scalable framework that can easily accommodate current and future LMS product offerings.</li>
+
+<li>Design a site structure in which new initiatives can be packaged and highlighted to clients instead of lost in the
+UI.</li>
+
+</ul>
+</div>
+
+<div class="objectives-art">
+
+ <img src="/images/IA_Clipart.png">
+
+</div>
+
+
+</section>
+
+<hr>
+
+</div>
+
+<div class="initialexp">
+
+<h2>Initial Exploration</h2>
+
+<p>While the current site structure happened as a function of aggregating similar content types, I took a task-oriented
+approach to improving it.</p>
+
+<aside class="highlight">
+
+    <p>"What do users want to accomplish when coming to the platform?"</p>
+
+</aside>
+
+<p>According to user research, the list of tasks included:</p>
+<ul>
+
+<li>Assign training</li>
+
+<li>Create training</li>
+
+<li>Assess skills and competencies</li>
+
+<li>Run reports</li>
+
+<li>Check organizational compliance</li>
+
+<li>Manage users in the system</li>
+
+</ul>
+
+<hr>
+</div>
+
+<div class="initial-solution">
+<h2>Initial Solution</h2>
+
+<p>I took an initial shot at creating a sitemap that focused on the tasks listed above. It broke the top level IA out into
+major task areas and spec’d out which existing content types would fall into each category, like a hybrid
+sitemap/content inventory.</p>
+
+<img src="/images/initial_sitemap.png">
+
+<p><strong>“Users” became “People,”</strong> and the different kinds of users - administrators, learners and applicants - were delineated
+separately in the next level of the IA. Administrators manage users within the system; learners are assigned training.
+
+<p><strong>It’s also important to distinguish a job applicant being assessed for a position from a full-time employee with a more
+permanent status in the system.</strong>Each user type has different tasks associated with it, and when they were lumped under
+the broad category of “Users,” it was hard to find the right people in the system and the right tasks. </p>
+
+<aside class="highlight">
+<p>Because this LMS is a mission-driven product to improve healthcare outcomes for people, the use of the word “People” at the highest level
+of navigation supports that brand standard and serves as a reminder that people are at the heart of this effort.</p>
+</aside>
+
+<p>“Learning” stayed the same, but <strong>the subnavigation became “Create Training” and “Assign Training,” creating a clear path
+for the tasks that happen within that topic.</strong> All the content linked under this category in the previous navigation will
+get rolled up in the UI and appear as tasks are being completed.</p>
+
+<p>Diving a bit deeper, “Training” was a big, all-encompassing category that wasn’t limited to just training. There were
+content objects like skills checklists and competency assessments that provided a mechanism for evaluating learners’
+skills and abilities, which isn’t the same as training.</p>
+
+<p><strong>For the purposes of this exercise, I defined “Training” as “acquiring new information,” and differentiated the skills
+checklists and assessments from training as learners “demonstrating what they know.”</strong>I created a separate category for
+that content to support that distinction: “Evaluations.”</p>
+
+<p>“Reporting” was self-explanatory and remained the same.</p>
+
+<hr>
+</div>
+
+<div class="validation-1">
+
+<h2>Validation, Round 1</h2>
+
+<p>Unfortunately, the timing around initial validation came at the start of a global pandemic, and our target users are
+healthcare administrators. It wasn’t an appropriate time to reach out to them for validation. I took the sitemap to my
+next best audience: Internal client success managers (CSMs). They are the bridge between our product and end users, and
+they have encyclopedic knowledge of client types, use cases, and the gaps where the product falls short on usability to
+the point where clients pick up the phone for help.</p>
+
+<p>I’d grouped our existing content into task-oriented categories and I wanted unbiased feedback as to what those
+categories should be. I deleted the labels of the highest level categories from their boxes on the sitemap. Instead of
+asking the CSMs whether my interpretation of those categories made sense, I asked them what labels they would assign if
+given the IA job. I got invaluable feedback around both the content groupings and CSM insights into what they would call
+those groups. Here’s an example of that feedback from “Learning” and “Create Coursework” and “Assign Coursework.”</p>
+
+<img src="/images/CSM_IA_Feedback.png">
+
+<p>After revealing my initial takes on the major navigation labels, we discussed which ones we thought were most intuitive
+and effective, and I incorporated the feedback into the next round of the sitemap. Below is Version 2 of the proposed
+site structure, ready for another round of validation by clients.</p>
+
+<img src="/images/2nd_draft_sitemap.png">
+
+<hr>
+</div>
+
+<div class="validation-2">
+
+<h2>Validation, Round 2</h2>
+
+<p>After the initial response to the pandemic, our clients indicated they were available again to provide feedback. I chose
+a hosted card sort activity using Optimal Workshop as the most convenient and least intrusive way for them to do that. I
+set up the activity and asked platform administrators across client verticals to determine where content objects fit into major navigation categories.
+Surprisingly, the response was significantly higher for this activity than it had been for previous UX surveys – perhaps
+the sorting activity was a welcome diversion at work?</p>
+
+<img src="/images/optimal_sort.png">
+
+<p>We analyzed the data from 126 completed card sorts and determined that the categories were intuitive and clear about
+nearly every piece of major functionality on the platform. There was one exception where participants placed the “Hierarchies”
+functionality in a 50/50 split between “People” and “Site Settings.” </p>
+
+<p>Because Hierarchies is an important tool that
+enables healthcare administrators to organize training groups and hold supervisors accountable for compliance, this
+split generated an additional user research initiative to better understand how to improve the functionality and how to
+define it in terms of the site IA. For the purpose of this project, the research put the functionality squarely in the
+“Users” category.</p>
+
+<img src="/images/cardsort_data_analysis.png">
+
+<hr>
+</div>
+
+<div class="final-solution">
+
+<h2>Final Solution</h2>
+
+<p>Once the revisions were made as a result of internal CSM and client validation, I met with the director of product
+management to review the product roadmap and play a game of “IA Jenga” where the goal was to determine if any
+roadmap initiatives would collapse the site structure. I was pleased to report that the site structure was flexible
+enough to incorporate all new product features for the next two years of development.</p>
+
+<p>The final IA is reflected in the wireframe below. When you compare the full left hand navigation in this wireframe to
+the navigation bars at the top of this case study, the impact of the redesign is clear. It provides users a direct and
+unambiguous path to getting work done. It brings new product initiatives and content to the surface. It eliminates
+confusion and redundancies. The streamlined nature of the navigation supports the simplicity of the new brand and visual
+redesign that will be rolling out as part of this effort.</p>
+
+<img src="/images/competency_mgt.png">
+
+<hr>
+
+</div>
+
+<div class="key-outcomes">
+
+<h2>Key Outcomes</h2>
+
+<p><strong>The content I previously categorized as “Evaluations” evolved into a new content category called “Competency
+Management.”</strong> While competency management was a product initiative in the works, it had not been clearly defined or
+considered relative to the information architecture in the LMS. It had also been obscured as a form of “training,” so
+<strong>this design process was instrumental in clearly defining a new product with significant future revenue streams.</strong></p>
+
+<p>Information architecture in general was a new concept to this product organization, and this exercise demonstrated the
+value of this approach to product design.<strong>In less than a year since I initiated this effort, the final site IA has
+become the “North Star” for a holistic product redesign, as well as the foundation for a new services-based backend
+architecture and the backbone of a new pricing and packaging strategy.</strong> This initiative quickly gained enterprise-wide visibility due to its 
+significant impact on product strategy and direction.</p>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
